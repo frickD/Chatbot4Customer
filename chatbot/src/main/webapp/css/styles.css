@@ -1,0 +1,129 @@
+ body {
+      font: 20px Montserrat, sans-serif;
+      line-height: 1.8;
+      color: #f5f6f7;
+  }
+  
+  h2{
+  font: 'Montserrat', sans-serif;
+  letter-spacing: 1pt;
+  text-transform: uppercase;
+  }
+  
+  p {font-size: 16px;}
+  .margin {margin-bottom: 45px;}
+  .bg-1 { 
+		background: #fa9805;
+		background: -moz-linear-gradient(45deg, #fa9805 1%, #fab205 100%);
+		background: -webkit-linear-gradient(45deg, #fa9805 1%,#fab205 100%);
+		background: linear-gradient(45deg, #fa9805 1%,#fab205 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fa9805', endColorstr='#fab205',GradientType=1 );
+  }
+  .bg-2 { 
+      background-color: #333842; /* Dark Blue */
+      color: #ffffff;
+  }
+  .bg-3 { 
+      background-color: #474e5d; /* White */
+      color: #ffffff;
+  }
+  .bg-4 { 
+      background-color: #2f2f2f; /* Black Gray */
+      color: #fff;
+  }
+  .bg-white { 
+		background-color: #ffffff;
+		color: #333842;
+		}
+		
+  .bg-dark { 
+		background-color: #111217;
+		color: #fa9805;
+		}	
+  .container-fluid {
+      padding-top: 70px;
+      padding-bottom: 70px;
+  }
+  
+  .navbar {
+      padding-top: 15px;
+      padding-bottom: 15px;
+      border: 0;
+      border-radius: 0;
+      margin-bottom: 0;
+      font-size: 12px;
+      letter-spacing: 5px;
+  }
+  .navbar-nav  li a:hover {
+      color: #fa9805 !important;
+  }
+  
+.orangefont {
+	color: #fa9805;
+}  
+  
+.no-padding-margin {
+  padding-left: 0;
+  padding-right: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+
+.gamingcard_container {
+    width: 45px;
+    height: 70px;
+    position: relative;
+    border: 1px solid #ccc;
+    -webkit-perspective: 800px;
+    -moz-perspective: 800px;
+    -o-perspective: 800px;
+    perspective: 800px;
+}
+.flip_gamingcard {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    -webkit-transition: -webkit-transform 1s;
+    -moz-transition: -moz-transform 1s;
+    -o-transition: -o-transform 1s;
+    transition: transform 1s;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transform-origin: 50% 50%;
+}
+.flip_gamingcard div {
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 70px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    position: absolute;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+.flip_gamingcard .front {
+}
+.flip_gamingcard .back {
+    -webkit-transform: rotateY( 180deg );
+    -moz-transform: rotateY( 180deg );
+    -o-transform: rotateY( 180deg );
+    transform: rotateY( 180deg );
+}
+.flip_gamingcard.flipped {
+    -webkit-transform: rotateY( 180deg );
+    -moz-transform: rotateY( 180deg );
+    -o-transform: rotateY( 180deg );
+    transform: rotateY( 180deg );
+}
+  
+  
