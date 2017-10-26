@@ -22,64 +22,61 @@ The entire code was written in just 4 days, so I know there are a lot of places 
 
 First of all, the file 'application.propeties' needs to be customized.
 
-C4C Settings
-| Property   | Description             | Example                   |
-| ---------- |:-----------------------:| -------------------------:|
-| user       | your C4C User           | peterm                    |
-| password   | password of your User   | 12345                     |
-| c4c        | your C4C tenant         | my231523.crm.ondemand.com |  
-| internalid | internalid of your user | 80023138                  |    
+##### user      =  your C4C User  (for example: peterm)
+##### password  = password of your User   (for example: 12345)
+##### c4c        = your C4C tenant         (my231523.crm.ondemand.com) 
+##### internalid = internalid of your user (80023138)                   
 
 Also you can customize to your IBM Chatbot Workspace if you want to.
 
 ## Commands
 
 ### Get Customer by city
-####Description
+#### Description
 Returns all customers located in this city.
-####Required 
+#### Required 
 City: München, Augsburg, Ingolstadt, Berlin, Köln, Hamburg
-####Example
+#### Example
 Gebe mir alle Kunden in München an.
 
 ### Appointments today
-####Description
+#### Description
 Returns all appointments that are in the calendar today
-####Required 
+#### Required 
 -
-####Example
+#### Example
 Welche Termine habe ich heute? 
 
 ### Appointment next
-####Description
+#### Description
 Returns the next scheduled appointment 
-####Required 
+#### Required 
 -
-####Example
+#### Example
 Was steht als nächstes an?
 
 ### Appointment time left
-####Description
+#### Description
 Returns Returns the time left until the next appointment
-####Required 
+#### Required 
 -
-####Example
+#### Example
 Wie viel Zeit habe ich bis zum nächsten Termin?
 
 ### Appointment time left
-####Description
+#### Description
 Returns Returns the time left until the next appointment
-####Required 
+#### Required 
 -
-####Example
+#### Example
 Wie viel Zeit habe ich bis zum nächsten Termin?
 
 ### Appointment create
-####Description
+#### Description
 Creates an Appointment for today
-####Required 
+#### Required 
 Time (for example: 19:00) & "Betreff: " (Name of Appointment, must be at the end of your command!)
-####Example
+#### Example
 Erstelle einen Termin um 5 Uhr Abends mit dem Betreff: Termin
 
 ## 
