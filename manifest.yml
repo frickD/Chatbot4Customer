@@ -6,6 +6,4 @@ applications:
   memory: 256M
   instances: 1
   buildpack: java_buildpack
-  host: Chatbot
-  domain: eu-gb.mybluemix.net
 

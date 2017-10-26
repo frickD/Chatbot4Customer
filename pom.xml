@@ -11,11 +11,11 @@
 	</parent>
 
 	<groupId>net.wasdev.wlp.sample</groupId>
-	<artifactId>Bonfire</artifactId>
+	<artifactId>Chatbot</artifactId>
 	<version>1.0-SNAPSHOT</version>
 	<packaging>war</packaging>
 
-	<name>Bonfire Party</name>
+	<name>Chatbot4Customer</name>
 
 	<licenses>
 		<license>
