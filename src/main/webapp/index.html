@@ -54,11 +54,41 @@
 	</div>
 	</div>
 	
+	<div id = "settings" class="container-fluid bg-2 text-center" style="display:none" >
+		
+		
+		<div class="form" id="signup">
+					<h3 id="login_text" style="color:#05cdfa">Settings.</h2>
+					
+						<div class="field-wrap" style="margin-top: 40px">
+							<label>C4C Tenant<span class="req">*</span>
+							</label> <input id="tenant_input" type="text" required autocomplete="off" />
+						</div>
+
+						<div class="field-wrap" style="margin-top: 40px">
+							<label>User<span class="req">*</span>
+							</label> <input id="user_input" type="text" required autocomplete="off" />
+						</div>
+
+						<div class="field-wrap">
+							<label>Password<span class="req">*</span>
+							</label> <input id="password_input" type="password" required
+								autocomplete="off" />
+						</div>
+						
+						<div class="field-wrap" style="margin-top: 40px">
+							<label>InternalID<span class="req">*</span>
+							</label> <input id="internal_input" type="text" required autocomplete="off" />
+						</div>
+				</div>
+		
+	</div>
+	
 	<!-- Party Container -->
 	
 
 	<!-- Footer -->
-	<footer class='container-fluid bg-4 text-center'><p>Chatbot4Customer by Daniel Frick. For more information <a href='https://www.github.com'>click here</a></p></footer>
+	<footer class='container-fluid bg-4 text-center'><p>Chatbot4Customer by Daniel Frick. For more information <a href='https://github.com/frickD/Chatbot4Customer'>click here</a></p></footer>
 
 
 
@@ -72,7 +102,7 @@
 	<script type="text/javascript">
 	var preloader = $("#preloader");
 	
-	var input = $("input");
+	var input = $("#input");
 	
 	$(document).keypress(function(e) {
 	    if(e.which == 13) {
@@ -85,15 +115,15 @@
 	});
 	
 	function sendInputToBot() {
+		
 		var inputText = input.val();
 		preloader.fadeIn();
 		$.ajax({
             method: "POST",
-            url: "/GetStartedTomcat/api/input",
+            url: "/api/input",
             contentType: "application/json",
             data: JSON.stringify({
                                  input: inputText
-                                
                                  })
             }).done(function (data) {
             	input.val("");
