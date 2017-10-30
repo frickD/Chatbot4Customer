@@ -12,7 +12,7 @@ Why should you always have to click around in C4C when you can quickly create a 
 
 ## Video.
 
- [Description Video](https://github.com/)
+ [Description Video](https://drive.google.com/file/d/0B95aqtjL8h0XZmktcE04R2xobjQ/view)
 
 ## Important.
 

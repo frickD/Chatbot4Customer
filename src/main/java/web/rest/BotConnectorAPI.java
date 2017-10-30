@@ -9,6 +9,7 @@ import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.Application;
 
+import application.c4c.Credentials;
 import application.chatbot.ChatbotConntector;
 import application.helper.SettingsReader;
 import web.Input;
